@@ -1182,6 +1182,77 @@ export default function Index() {
               </div>
             </Reveal>
 
+            {/* ── Анастасия Емельянова ── */}
+            <Reveal delay={0.15}>
+              <div
+                className="rounded-3xl border p-8 md:p-12"
+                style={{
+                  background: "rgba(45,0,75,0.3)",
+                  borderColor: "rgba(157,78,221,0.25)",
+                  boxShadow: "0 0 80px rgba(157,78,221,0.1)",
+                }}
+              >
+                <div className="flex flex-col md:flex-row gap-10 items-start">
+                  <div className="flex-shrink-0 flex flex-col items-center gap-4">
+                    <div className="w-48 h-48 rounded-2xl overflow-hidden" style={{ boxShadow: "0 0 40px rgba(157,78,221,0.4)" }}>
+                      <img src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/14b04c74-239d-401b-b9e7-4fdd94af4ab7.png" alt="Анастасия Емельянова" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="text-center">
+                      <h3 className="font-oswald text-xl font-bold uppercase">АНАСТАСИЯ ЕМЕЛЬЯНОВА</h3>
+                      <p className="text-xs text-white/50 mt-1 font-golos leading-snug max-w-[180px]">Эксперт в сфере обучения персонала и внедрения программ ИИ</p>
+                    </div>
+                  </div>
+                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Экспертиза</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {[
+                          "Стратегическое управление обучением (T&D): построение систем обучения с нуля",
+                          "Управление end-to-end проектами: полный цикл от анализа до оценки по модели Киркпатрика",
+                          "Гибридные и цифровые форматы: стриминги, вебинары, VR-тренажёры",
+                          "Бизнес-партнёрство с ключевыми стейкхолдерами дилерской сети",
+                          "Перевод сложных технических тем в доступные программы для линейного персонала",
+                          "Оптимизация через стандартизацию: аудит процессов и создание стандартов работы",
+                        ].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Опыт</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {["12+ лет в корпоративном обучении", "X5 Retail Group, Яндекс, Nissan Manufacturing Rus, McKinsey & Company", "Автомобильная отрасль, ритейл, IT", "Техническое и управленческое обучение"].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Достижения</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {[
+                          "X5: стандарты АТП, система поддержки экспертов 24/7",
+                          "Яндекс: NPS программ обучения 70–90%",
+                          "Яндекс: оценка по Киркпатрику, подкаст для B2B-клиентов",
+                          "Nissan: VR-обучение с удовлетворённостью 95%",
+                          "Nissan: система сертификации руководителей",
+                        ].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Квалификация</span></div>
+                      <div className="flex flex-wrap gap-3 font-golos text-sm text-white/70">
+                        <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>Digital-тренер и методолог</span>
+                        <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>Сертифицированный бизнес-тренер</span>
+                        <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>Английский язык C1</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+
           </div>
         </div>
       </section>
