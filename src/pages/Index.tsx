@@ -1330,6 +1330,75 @@ export default function Index() {
               </div>
             </Reveal>
 
+            {/* ── Иван Старостин ── */}
+            <Reveal delay={0.15}>
+              <div
+                className="rounded-3xl border p-8 md:p-12"
+                style={{
+                  background: "rgba(45,0,75,0.3)",
+                  borderColor: "rgba(157,78,221,0.25)",
+                  boxShadow: "0 0 80px rgba(157,78,221,0.1)",
+                }}
+              >
+                <div className="flex flex-col md:flex-row gap-10 items-start">
+                  <div className="flex-shrink-0 flex flex-col items-center gap-4">
+                    <div className="w-48 h-48 rounded-2xl overflow-hidden" style={{ boxShadow: "0 0 40px rgba(157,78,221,0.4)" }}>
+                      <img src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/f34f3f16-3893-4627-bd13-66e1d79615e4.png" alt="Иван Старостин" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="text-center">
+                      <h3 className="font-oswald text-xl font-bold uppercase">ИВАН СТАРОСТИН</h3>
+                      <p className="text-xs text-white/50 mt-1 font-golos leading-snug max-w-[180px]">Внедрение ИИ в бизнес-процессы</p>
+                    </div>
+                  </div>
+                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Экспертиза</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {[
+                          "ИИ-стратегия и архитектура применения ИИ",
+                          "Внедрение ИИ в бизнес-процессы (AI-native processes)",
+                          "Использование ИИ в регулируемой среде",
+                        ].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Опыт</span></div>
+                      <div className="grid grid-cols-2 gap-3 mb-3">
+                        {[
+                          { num: "15+", label: "лет в цифровых платформах" },
+                          { num: "700+", label: "человек под управлением" },
+                        ].map((a, i) => (
+                          <div key={i} className="rounded-xl px-3 py-2 text-center" style={{ background: "rgba(157,78,221,0.12)", border: "1px solid rgba(157,78,221,0.2)" }}>
+                            <div className="font-oswald text-xl font-bold" style={{ color: "#FF00FF" }}>{a.num}</div>
+                            <div className="font-golos text-xs text-white/50 leading-snug mt-1">{a.label}</div>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="font-golos text-xs text-white/50">Альфа, Сбер, ВТБ и другие крупнейшие компании</p>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Примеры проектов</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {[
+                          "Внедрение ИИ-агентов в 90% внутренней разработки (100% кода и тестов) и перевод в полностью автоматический режим",
+                          "Создание фабрики специализированных ИИ-агентов под задачу",
+                          "Корпоративная Q&A-система по базе знаний с контролем качества ответов",
+                        ].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Подход</span></div>
+                      <p className="font-golos text-sm text-white/60 leading-relaxed">Диагностика процесса и ограничений → проектирование целевой схемы → запуск управляемого контура качества → передача с документацией и метриками</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+
           </div>
         </div>
       </section>
