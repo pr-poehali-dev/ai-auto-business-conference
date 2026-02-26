@@ -1253,6 +1253,83 @@ export default function Index() {
               </div>
             </Reveal>
 
+            {/* ── Алексей Николаев ── */}
+            <Reveal delay={0.15}>
+              <div
+                className="rounded-3xl border p-8 md:p-12"
+                style={{
+                  background: "rgba(45,0,75,0.3)",
+                  borderColor: "rgba(157,78,221,0.25)",
+                  boxShadow: "0 0 80px rgba(157,78,221,0.1)",
+                }}
+              >
+                <div className="flex flex-col md:flex-row gap-10 items-start">
+                  <div className="flex-shrink-0 flex flex-col items-center gap-4">
+                    <div className="w-48 h-48 rounded-2xl overflow-hidden" style={{ boxShadow: "0 0 40px rgba(157,78,221,0.4)" }}>
+                      <img src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/ae10706c-5134-4ac0-b1f6-280942b17523.png" alt="Алексей Николаев" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="text-center">
+                      <h3 className="font-oswald text-xl font-bold uppercase">АЛЕКСЕЙ НИКОЛАЕВ</h3>
+                      <p className="text-xs text-white/50 mt-1 font-golos leading-snug max-w-[180px]">Консультант для автодилеров по внедрению ИИ, бизнес-тренер</p>
+                    </div>
+                  </div>
+                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Экспертиза</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {[
+                          "Обучение сотрудников автодилеров от механиков до директоров",
+                          "Аудит бизнеса автодилеров",
+                          "Сертификация персонала автодилеров",
+                          "Стратегия и архитектура ИИ",
+                          "Выбор и внедрение ИИ инструментов, создание платформ",
+                        ].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Опыт</span></div>
+                      <div className="grid grid-cols-3 gap-3 mb-4">
+                        {[
+                          { num: "25+", label: "лет в автобизнесе" },
+                          { num: "4000+", label: "тренингов" },
+                          { num: "26", label: "проектов цифровизации с ИИ" },
+                        ].map((a, i) => (
+                          <div key={i} className="rounded-xl px-3 py-2 text-center" style={{ background: "rgba(157,78,221,0.12)", border: "1px solid rgba(157,78,221,0.2)" }}>
+                            <div className="font-oswald text-xl font-bold" style={{ color: "#FF00FF" }}>{a.num}</div>
+                            <div className="font-golos text-xs text-white/50 leading-snug mt-1">{a.label}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Достижения</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {[
+                          "Передал клиентам 49 автомобилей в месяц, обеспечил сток на 6 месяцев вперёд",
+                          "Вывел сервисное подразделение в лидеры по NPS среди 236 предприятий бренда",
+                          "Провёл более 4000 тренингов, обучил более 10 000 специалистов",
+                          "Увеличил выручку сервиса на 20% за 1 месяц без финансовых вложений",
+                          "Улучшил показатели маркетинга на 68% за счёт применения ИИ инструментов",
+                        ].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Квалификация</span></div>
+                      <div className="flex flex-wrap gap-3 font-golos text-sm text-white/70">
+                        {["Инженер-механик", "Сертифицированный бизнес-тренер, аудитор, асессор", "Лучший продавец нескольких автомобильных брендов", "Специалист по ИИ"].map((q, i) => (
+                          <span key={i} className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>{q}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+
           </div>
         </div>
       </section>
