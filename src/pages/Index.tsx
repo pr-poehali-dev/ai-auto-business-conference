@@ -602,10 +602,20 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <button
             onClick={() => scrollTo("#hero")}
-            className="font-oswald text-lg font-bold tracking-widest text-white"
-            style={{ textShadow: "0 0 20px rgba(255,0,255,0.5)" }}
+            className="flex items-center gap-3"
           >
-            ИИ В АВТО <span style={{ color: "#FF00FF" }}>2.0</span>
+            <img
+              src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/324a8a9f-e006-4d7a-b015-9f139c0a89e1.jpg"
+              alt="AI Navigate"
+              className="h-10 w-10 rounded-full object-cover"
+              style={{ boxShadow: "0 0 16px rgba(255,0,255,0.4)" }}
+            />
+            <span
+              className="font-oswald text-lg font-bold tracking-widest text-white"
+              style={{ textShadow: "0 0 20px rgba(255,0,255,0.5)" }}
+            >
+              ИИ В АВТО <span style={{ color: "#FF00FF" }}>2.0</span>
+            </span>
           </button>
 
           {/* Desktop nav */}
@@ -679,13 +689,22 @@ export default function Index() {
           style={{ background: "radial-gradient(circle, rgba(255,0,255,0.1) 0%, transparent 70%)", filter: "blur(30px)" }} />
 
         <div className="relative z-10 text-center max-w-5xl mx-auto px-6 pt-24 pb-16">
+          <div className="flex justify-center mb-6" style={{ animation: "fade-in 0.6s ease-out forwards" }}>
+            <img
+              src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/324a8a9f-e006-4d7a-b015-9f139c0a89e1.jpg"
+              alt="AI Navigate"
+              className="h-28 w-28 md:h-36 md:w-36 rounded-full object-cover"
+              style={{ boxShadow: "0 0 60px rgba(157,78,221,0.5), 0 0 120px rgba(255,0,255,0.2)" }}
+            />
+          </div>
+
           <div
             className="inline-block mb-6 px-5 py-2 text-sm font-golos tracking-widest rounded-full border"
             style={{
               borderColor: "rgba(255,0,255,0.4)",
               background: "rgba(255,0,255,0.05)",
               color: "#FF00FF",
-              animation: "fade-in 0.6s ease-out forwards",
+              animation: "fade-in 0.6s ease-out 0.1s both",
             }}
           >
             2 АПРЕЛЯ 2026 • МОСКВА
