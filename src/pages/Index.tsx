@@ -1048,108 +1048,141 @@ export default function Index() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.1}>
-            <div
-              className="rounded-3xl border p-8 md:p-12"
-              style={{
-                background: "rgba(45,0,75,0.3)",
-                borderColor: "rgba(157,78,221,0.25)",
-                boxShadow: "0 0 80px rgba(157,78,221,0.1)",
-              }}
-            >
-              <div className="flex flex-col md:flex-row gap-10 items-start">
-                {/* Photo */}
-                <div className="flex-shrink-0 flex flex-col items-center gap-4">
-                  <div
-                    className="w-48 h-48 rounded-2xl overflow-hidden"
-                    style={{ boxShadow: "0 0 40px rgba(157,78,221,0.4)" }}
-                  >
-                    <img
-                      src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/7801ca27-6db1-4d84-9120-b618ccf95fe2.png"
-                      alt="Елена Ермакова"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h3 className="font-oswald text-xl font-bold uppercase">ЕЛЕНА ЕРМАКОВА</h3>
-                    <p className="text-xs text-white/50 mt-1 font-golos leading-snug max-w-[180px]">Эксперт в автоиндустрии.<br />Управление программой внедрения</p>
-                  </div>
-                </div>
+          <div className="flex flex-col gap-8">
 
-                {/* Info grid */}
-                <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Экспертиза */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} />
-                      <span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Экспертиза</span>
+            {/* ── Елена Ермакова ── */}
+            <Reveal delay={0.1}>
+              <div
+                className="rounded-3xl border p-8 md:p-12"
+                style={{
+                  background: "rgba(45,0,75,0.3)",
+                  borderColor: "rgba(157,78,221,0.25)",
+                  boxShadow: "0 0 80px rgba(157,78,221,0.1)",
+                }}
+              >
+                <div className="flex flex-col md:flex-row gap-10 items-start">
+                  <div className="flex-shrink-0 flex flex-col items-center gap-4">
+                    <div className="w-48 h-48 rounded-2xl overflow-hidden" style={{ boxShadow: "0 0 40px rgba(157,78,221,0.4)" }}>
+                      <img src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/7801ca27-6db1-4d84-9120-b618ccf95fe2.png" alt="Елена Ермакова" className="w-full h-full object-cover" />
                     </div>
-                    <ul className="space-y-1.5 font-golos text-sm text-white/70">
-                      {["Управление проектами и программами", "Организация тендерных закупок", "Бизнес-процессы дилера, дистрибьютора, автопроизводителя", "Операционная эффективность", "Разработка и внедрение стандартов обслуживания"].map((item, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Опыт */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} />
-                      <span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Опыт</span>
-                    </div>
-                    <ul className="space-y-1.5 font-golos text-sm text-white/70">
-                      {["15+ лет в автобизнесе", "Исполнительный директор АвтоСпецЦентр", "Директорские позиции в Hyundai Motor CIS", "FNGroup, СОЛЛЕРС"].map((item, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Достижения */}
-                  <div className="md:col-span-2">
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} />
-                      <span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Достижения</span>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {[
-                        { num: "2.2×", label: "Рост рентабельности по EBITDA" },
-                        { num: "−35%", label: "Прямые трудовые затраты в Валовой прибыли" },
-                        { num: "−30%", label: "Эффект тендерных закупок в 1-й год" },
-                        { num: "5×", label: "Масштабирование Hyundai Training Academy за 5 лет" },
-                      ].map((a, i) => (
-                        <div
-                          key={i}
-                          className="rounded-xl px-4 py-3 flex items-center gap-3"
-                          style={{ background: "rgba(157,78,221,0.12)", border: "1px solid rgba(157,78,221,0.2)" }}
-                        >
-                          <span className="font-oswald text-2xl font-bold" style={{ color: "#FF00FF" }}>{a.num}</span>
-                          <span className="font-golos text-xs text-white/60 leading-snug">{a.label}</span>
-                        </div>
-                      ))}
+                    <div className="text-center">
+                      <h3 className="font-oswald text-xl font-bold uppercase">ЕЛЕНА ЕРМАКОВА</h3>
+                      <p className="text-xs text-white/50 mt-1 font-golos leading-snug max-w-[180px]">Эксперт в автоиндустрии.<br />Управление программой внедрения</p>
                     </div>
                   </div>
-
-                  {/* Квалификация */}
-                  <div className="md:col-span-2">
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} />
-                      <span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Квалификация</span>
+                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Экспертиза</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {["Управление проектами и программами", "Организация тендерных закупок", "Бизнес-процессы дилера, дистрибьютора, автопроизводителя", "Операционная эффективность", "Разработка и внедрение стандартов обслуживания"].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
                     </div>
-                    <div className="flex flex-wrap gap-3 font-golos text-sm text-white/70">
-                      <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>МГТУ им. Баумана, инженер-электроник</span>
-                      <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>МГУ им. Ломоносова, психолог</span>
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Опыт</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {["15+ лет в автобизнесе", "Исполнительный директор АвтоСпецЦентр", "Директорские позиции в Hyundai Motor CIS", "FNGroup, СОЛЛЕРС"].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Достижения</span></div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {[
+                          { num: "2.2×", label: "Рост рентабельности по EBITDA" },
+                          { num: "−35%", label: "Прямые трудовые затраты в Валовой прибыли" },
+                          { num: "−30%", label: "Эффект тендерных закупок в 1-й год" },
+                          { num: "5×", label: "Масштабирование Hyundai Training Academy за 5 лет" },
+                        ].map((a, i) => (
+                          <div key={i} className="rounded-xl px-4 py-3 flex items-center gap-3" style={{ background: "rgba(157,78,221,0.12)", border: "1px solid rgba(157,78,221,0.2)" }}>
+                            <span className="font-oswald text-2xl font-bold" style={{ color: "#FF00FF" }}>{a.num}</span>
+                            <span className="font-golos text-xs text-white/60 leading-snug">{a.label}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Квалификация</span></div>
+                      <div className="flex flex-wrap gap-3 font-golos text-sm text-white/70">
+                        <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>МГТУ им. Баумана, инженер-электроник</span>
+                        <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>МГУ им. Ломоносова, психолог</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
+
+            {/* ── Кирилл Лядов ── */}
+            <Reveal delay={0.15}>
+              <div
+                className="rounded-3xl border p-8 md:p-12"
+                style={{
+                  background: "rgba(45,0,75,0.3)",
+                  borderColor: "rgba(157,78,221,0.25)",
+                  boxShadow: "0 0 80px rgba(157,78,221,0.1)",
+                }}
+              >
+                <div className="flex flex-col md:flex-row gap-10 items-start">
+                  <div className="flex-shrink-0 flex flex-col items-center gap-4">
+                    <div className="w-48 h-48 rounded-2xl overflow-hidden" style={{ boxShadow: "0 0 40px rgba(157,78,221,0.4)" }}>
+                      <img src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/7804d044-b5cb-459a-9441-8f9cbae480ca.png" alt="Кирилл Лядов" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="text-center">
+                      <h3 className="font-oswald text-xl font-bold uppercase">КИРИЛЛ ЛЯДОВ</h3>
+                      <p className="text-xs text-white/50 mt-1 font-golos leading-snug max-w-[180px]">Стратегия ИИ и разработка ИИ систем</p>
+                    </div>
+                  </div>
+                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Экспертиза</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {["Стратегия и архитектура ИИ", "Выбор и внедрение ИИ платформ", "Качество и защита данных"].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Опыт</span></div>
+                      <ul className="space-y-1.5 font-golos text-sm text-white/70">
+                        {["10+ лет в компаниях Accenture, PWC, EY", "Управляет командами 100–200 человек"].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2"><span style={{ color: "#9D4EDD" }} className="mt-1 flex-shrink-0">▸</span><span>{item}</span></li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Достижения</span></div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {[
+                          { num: "$200M+", label: "Экономический эффект для клиентов в РФ и на Ближнем Востоке" },
+                          { num: "30+", label: "ИИ систем разработано и внедрено" },
+                          { num: "+17%", label: "Рост маржи в e-commerce благодаря ИИ" },
+                          { num: "−15%", label: "Снижение операционных затрат для добывающей компании" },
+                        ].map((a, i) => (
+                          <div key={i} className="rounded-xl px-4 py-3 flex items-center gap-3" style={{ background: "rgba(157,78,221,0.12)", border: "1px solid rgba(157,78,221,0.2)" }}>
+                            <span className="font-oswald text-2xl font-bold" style={{ color: "#FF00FF" }}>{a.num}</span>
+                            <span className="font-golos text-xs text-white/60 leading-snug">{a.label}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="flex items-center gap-2 mb-3"><div className="w-1 h-4 rounded-full" style={{ background: "#FF00FF" }} /><span className="font-oswald text-sm tracking-widest uppercase" style={{ color: "#FF00FF" }}>Квалификация</span></div>
+                      <div className="flex flex-wrap gap-3 font-golos text-sm text-white/70">
+                        <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>Магистр, Информационные системы и ИИ, МИЭМ</span>
+                        <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>CDMP</span>
+                        <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>DipIFR ACCA</span>
+                        <span className="px-3 py-1.5 rounded-full" style={{ background: "rgba(255,0,255,0.08)", border: "1px solid rgba(255,0,255,0.2)" }}>PMP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+
+          </div>
         </div>
       </section>
 
