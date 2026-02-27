@@ -519,6 +519,19 @@ function TicketModal({ ticket, onClose }: { ticket: TicketType; onClose: () => v
                 </div>
               )}
 
+              <div className="flex items-start gap-2.5">
+                <input
+                  type="checkbox"
+                  id="oferta-agree"
+                  required
+                  className="mt-0.5 w-4 h-4 shrink-0 accent-[#9D4EDD] cursor-pointer"
+                />
+                <label htmlFor="oferta-agree" className="text-white/40 text-xs leading-relaxed cursor-pointer">
+                  Я ознакомился и принимаю условия{" "}
+                  <a href="#" className="text-white/60 hover:text-[#FF00FF] transition-colors underline">договора оферты</a>
+                </label>
+              </div>
+
               <button
                 type="submit"
                 className="w-full py-4 font-oswald text-base font-semibold tracking-wider rounded-full transition-all duration-200 hover:scale-[1.02] mt-2"
