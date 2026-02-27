@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { exportProgramDocx } from "@/utils/exportProgram";
 import Icon from "@/components/ui/icon";
 
 // ── DATA ────────────────────────────────────────────────────────────────────
@@ -902,6 +903,15 @@ export default function Index() {
               <h2 className="font-oswald text-4xl md:text-5xl font-bold mt-3 mb-8 uppercase">
                 Программа <span style={{ color: "#9D4EDD" }}>конференции</span>
               </h2>
+              <button
+                onClick={exportProgramDocx}
+                className="inline-flex items-center gap-2 px-6 py-2.5 mb-8 rounded-full text-sm font-golos font-medium transition-all duration-200 hover:scale-105"
+                style={{ background: "rgba(157,78,221,0.12)", border: "1px solid rgba(157,78,221,0.35)", color: "rgba(255,255,255,0.7)" }}
+              >
+                <Icon name="Download" size={15} />
+                Скачать программу (.docx)
+              </button>
+
               {/* Track filters */}
               <div className="flex flex-wrap justify-center gap-3">
                 {TRACKS.map((track) => (
