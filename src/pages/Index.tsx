@@ -63,6 +63,8 @@ const SPEAKERS = [
   { name: "Степан Бойков", role: "Исполнительный директор", company: "Автобизнес Консалтинг", initials: "СБ", color: "#FF00FF", topic: "", bio: "" },
   { name: "Алексей Николаев", role: "Эксперт", company: "Автобизнес Консалтинг", initials: "АН", color: "#7B2FBE", topic: "", bio: "" },
   { name: "Анастасия Емельянова", role: "Эксперт", company: "Автобизнес Консалтинг", initials: "АЕ", color: "#9D4EDD", topic: "", bio: "" },
+  { name: "Кирилл Лядов", role: "Спикер", company: "", initials: "КЛ", color: "#FF00FF", topic: "", bio: "" },
+  { name: "Иван Староастин", role: "Спикер", company: "", initials: "ИС", color: "#7B2FBE", topic: "", bio: "" },
 ];
 
 const PROGRAM = [
