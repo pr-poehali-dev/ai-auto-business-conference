@@ -50,78 +50,19 @@ const ROLES = [
 ];
 
 const SPEAKERS = [
-  {
-    name: "Александр Петров",
-    role: "CTO",
-    company: "Чанган Моторс Россия",
-    topic: "Основные системные ошибки и смена парадигмы",
-    bio: "Более 15 лет в автомобильной отрасли. Руководит цифровой трансформацией одного из ключевых китайских брендов на российском рынке.",
-    initials: "АП",
-    color: "#9D4EDD",
-  },
-  {
-    name: "Мария Иванова",
-    role: "Директор по ИИ",
-    company: "Джили Мотор",
-    topic: "Цифровизация и клиентские ожидания поколения Z",
-    bio: "Эксперт в области машинного обучения и клиентского опыта. Автор методологии «Цифровой дилер» для CIS-рынка.",
-    initials: "МИ",
-    color: "#FF00FF",
-  },
-  {
-    name: "Дмитрий Соколов",
-    role: "Вице-президент по инновациям",
-    company: "HAVAL",
-    topic: "Чат-боты, которые действительно продают: кейс роста конверсии на 34%",
-    bio: "Запустил более 20 ИИ-проектов в автоотрасли. Специализируется на разговорных интерфейсах и автоматизации воронок продаж.",
-    initials: "ДС",
-    color: "#7B2FBE",
-  },
-  {
-    name: "Елена Волкова",
-    role: "Руководитель цифровизации",
-    company: "Hyundai Motor CIS",
-    topic: "Генеративный ИИ для персонализированных предложений",
-    bio: "Возглавляет программу цифровой трансформации для дилерской сети в СНГ. Спикер международных конференций по automotive tech.",
-    initials: "ЕВ",
-    color: "#9D4EDD",
-  },
-  {
-    name: "Алексей Кузнецов",
-    role: "Директор сервисного департамента",
-    company: "Приглашённый эксперт",
-    topic: "Почему сервис важнее продаж: новая экономика дилера",
-    bio: "20 лет в автосервисном бизнесе. Разработал систему предиктивной диагностики для дилерских центров.",
-    initials: "АК",
-    color: "#FF00FF",
-  },
-  {
-    name: "Кира Волкова",
-    role: "Маркетолог-стратег",
-    company: "Эксперт по цифровым коммуникациям",
-    topic: "Маркетинг 6.0: от массовых рассылок к иммерсивному опыту",
-    bio: "Консультант топ-10 автомобильных брендов. Автор курса «ИИ в автомаркетинге» с аудиторией 5000+ слушателей.",
-    initials: "КВ",
-    color: "#7B2FBE",
-  },
-  {
-    name: "Эксперт-практик",
-    role: "Руководитель дилерского холдинга",
-    company: "Уточняется",
-    topic: "Внедрение ИИ: с чего начать — живой кейс",
-    bio: "Практик с реальным опытом внедрения ИИ-инструментов в операционную деятельность дилерского центра.",
-    initials: "ЭП",
-    color: "#9D4EDD",
-  },
-  {
-    name: "Эксперт-практик",
-    role: "HR-директор",
-    company: "Уточняется",
-    topic: "ИИ-ассистенты для onboarding и обучения сотрудников",
-    bio: "Специалист по обучению персонала в условиях цифровой трансформации. Разработал методику внедрения ИИ в HR-процессы.",
-    initials: "ЭП",
-    color: "#FF00FF",
-  },
+  { name: "Александр Кулагин", role: "Исполнительный директор", company: "Чанган Моторс РУС", initials: "АК", color: "#9D4EDD", topic: "", bio: "" },
+  { name: "Алексей Почечуев", role: "Директор по продажам", company: "Geely", initials: "АП", color: "#FF00FF", topic: "", bio: "" },
+  { name: "Дмитрий Денисов", role: "Директор Академии", company: "АВТОВАЗ", initials: "ДД", color: "#7B2FBE", topic: "", bio: "" },
+  { name: "Дмитрий Новиков", role: "Директор клиентской службы", company: "АВТОВАЗ", initials: "ДН", color: "#9D4EDD", topic: "", bio: "" },
+  { name: "Василий Чеботарёв", role: "Руководитель отдела маркетинга", company: "Мотор Инвест", initials: "ВЧ", color: "#FF00FF", topic: "", bio: "" },
+  { name: "Ирина Клебанович", role: "Руководитель тренинг-центра", company: "Джетур", initials: "ИК", color: "#7B2FBE", topic: "", bio: "" },
+  { name: "Ирина Козлова", role: "Руководитель направления", company: "СБЕР КРЕДИТОВАНИЕ", initials: "ИК", color: "#9D4EDD", topic: "", bio: "" },
+  { name: "Алексей Лагутин", role: "Руководитель департамента", company: "СБЕР СТРАХОВАНИЕ", initials: "АЛ", color: "#FF00FF", topic: "", bio: "" },
+  { name: "Олег Габидулин", role: "Операционный директор по AI", company: "Яндекс (Латинская Америка, Турция)", initials: "ОГ", color: "#7B2FBE", topic: "", bio: "" },
+  { name: "Инна Петухова", role: "Генеральный директор", company: "Автобизнес Консалтинг", initials: "ИП", color: "#9D4EDD", topic: "", bio: "" },
+  { name: "Степан Бойков", role: "Исполнительный директор", company: "Автобизнес Консалтинг", initials: "СБ", color: "#FF00FF", topic: "", bio: "" },
+  { name: "Алексей Николаев", role: "Эксперт", company: "Автобизнес Консалтинг", initials: "АН", color: "#7B2FBE", topic: "", bio: "" },
+  { name: "Анастасия Емельянова", role: "Эксперт", company: "Автобизнес Консалтинг", initials: "АЕ", color: "#9D4EDD", topic: "", bio: "" },
 ];
 
 const PROGRAM = [
@@ -996,55 +937,47 @@ export default function Index() {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {SPEAKERS.map((sp, i) => (
-              <Reveal key={sp.name + i} delay={i * 0.06}>
-                <div
-                  className="relative group cursor-pointer rounded-2xl overflow-hidden border transition-all duration-300 hover:scale-105"
-                  style={{
-                    background: "rgba(45,0,75,0.4)",
-                    borderColor: activeSpeaker === i ? sp.color : "rgba(157,78,221,0.2)",
-                    boxShadow: activeSpeaker === i ? `0 0 30px ${sp.color}40` : "none",
-                  }}
-                  onClick={() => setActiveSpeaker(activeSpeaker === i ? null : i)}
-                >
-                  {/* Photo placeholder with initials */}
-                  <div
-                    className="w-full aspect-square flex items-center justify-center relative overflow-hidden"
-                    style={{ background: `linear-gradient(135deg, ${sp.color}30, rgba(13,0,21,0.8))` }}
-                  >
-                    <span className="font-oswald text-4xl font-bold text-white/30">{sp.initials}</span>
-                    <div
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4"
-                      style={{ background: `${sp.color}cc` }}
+          <Reveal>
+            <div className="overflow-hidden rounded-2xl border" style={{ borderColor: "rgba(157,78,221,0.25)" }}>
+              <table className="w-full">
+                <thead>
+                  <tr style={{ background: "rgba(157,78,221,0.15)" }}>
+                    <th className="text-left px-6 py-4 font-oswald text-sm tracking-widest uppercase text-white/50">Спикер</th>
+                    <th className="text-left px-6 py-4 font-oswald text-sm tracking-widest uppercase text-white/50 hidden md:table-cell">Должность</th>
+                    <th className="text-left px-6 py-4 font-oswald text-sm tracking-widest uppercase text-white/50">Компания</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {SPEAKERS.map((sp, i) => (
+                    <tr
+                      key={sp.name + i}
+                      className="transition-colors duration-200 border-t"
+                      style={{
+                        borderColor: "rgba(157,78,221,0.1)",
+                        background: i % 2 === 0 ? "rgba(13,0,21,0.4)" : "rgba(45,0,75,0.15)",
+                      }}
                     >
-                      <div className="text-center">
-                        <p className="text-white text-xs leading-relaxed">{sp.bio}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="p-4">
-                    <h3 className="font-oswald text-base font-semibold leading-tight mb-1">{sp.name}</h3>
-                    <p className="text-xs mb-1" style={{ color: sp.color }}>{sp.role}</p>
-                    <p className="text-xs text-white/40">{sp.company}</p>
-                  </div>
-
-                  {/* Expanded bio */}
-                  {activeSpeaker === i && (
-                    <div
-                      className="px-4 pb-4 text-xs text-white/70 border-t"
-                      style={{ borderColor: `${sp.color}30` }}
-                    >
-                      <p className="mt-3 mb-2 font-semibold text-white/90">Тема:</p>
-                      <p style={{ color: sp.color }}>{sp.topic}</p>
-                      <p className="mt-2">{sp.bio}</p>
-                    </div>
-                  )}
-                </div>
-              </Reveal>
-            ))}
-          </div>
+                      <td className="px-6 py-4">
+                        <div className="flex items-center gap-3">
+                          <div
+                            className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 font-oswald font-bold text-xs text-white"
+                            style={{ background: `linear-gradient(135deg, ${sp.color}80, ${sp.color}30)`, border: `1px solid ${sp.color}50` }}
+                          >
+                            {sp.initials}
+                          </div>
+                          <span className="font-golos font-medium text-white text-sm">{sp.name}</span>
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 text-sm text-white/60 font-golos hidden md:table-cell">{sp.role}</td>
+                      <td className="px-6 py-4">
+                        <span className="text-sm font-golos font-medium" style={{ color: sp.color }}>{sp.company}</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </Reveal>
         </div>
       </section>
 
