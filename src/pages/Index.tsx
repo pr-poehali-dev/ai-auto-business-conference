@@ -1342,7 +1342,7 @@ export default function Index() {
               </div>
             </Reveal>
 
-            {/* ── Иван Старостин ── */}
+            {/* ── Иван Старостасин ── */}
             <Reveal delay={0.15}>
               <div
                 className="rounded-3xl border p-8 md:p-12"
@@ -1355,10 +1355,10 @@ export default function Index() {
                 <div className="flex flex-col md:flex-row gap-10 items-start">
                   <div className="flex-shrink-0 flex flex-col items-center gap-4">
                     <div className="w-48 h-48 rounded-2xl overflow-hidden" style={{ boxShadow: "0 0 40px rgba(157,78,221,0.4)" }}>
-                      <img src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/f34f3f16-3893-4627-bd13-66e1d79615e4.png" alt="Иван Старостин" className="w-full h-full object-cover" />
+                      <img src="https://cdn.poehali.dev/projects/d4af42ec-5015-483c-b71c-6bf32723c131/bucket/f34f3f16-3893-4627-bd13-66e1d79615e4.png" alt="Иван Старостасин" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center">
-                      <h3 className="font-oswald text-xl font-bold uppercase">ИВАН СТАРОСТИН</h3>
+                      <h3 className="font-oswald text-xl font-bold uppercase">ИВАН СТАРОСТАСИН</h3>
                       <p className="text-xs text-white/50 mt-1 font-golos leading-snug max-w-[180px]">Внедрение ИИ в бизнес-процессы</p>
                     </div>
                   </div>
